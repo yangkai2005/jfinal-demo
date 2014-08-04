@@ -55,7 +55,6 @@
 			<version>8.1.8</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- cos -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -154,6 +153,14 @@
 			<version>2.1.v20100127</version>
 		</dependency>
 		<!-- // jetty -->
+
+		<!-- file upload cos -->
+		<dependency>
+			<groupId>com.servlets</groupId>
+			<artifactId>cos</artifactId>
+			<version>05Nov2002</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>jfinal-demo</finalName>
@@ -165,14 +172,6 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
